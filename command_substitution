@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# command substitution is similar to variable expansion,
+# instead of assigning the value to a variable, it assigns
+# a command output inside it
+
+time=$(date +%H:%m:%S)
+
+echo "Hello ${USER^}, the current time is $time"
+
+# command substitution can be used also to run commands
+# inside commands like in the tar function in our ex01 script:
+# tar -cvf ~/bash/my_backup_$(date +%H:%m:%S).tar

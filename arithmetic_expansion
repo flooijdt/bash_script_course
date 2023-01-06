@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+x=2
+y=3
+
+echo $((2 + 3))
+echo $((x + y))
+
+echo "scale=3; 3/2" | bc
+
+exit 0

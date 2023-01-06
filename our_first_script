@@ -1,0 +1,18 @@
+#!/bin/bash
+# author: flooijdt
+# date_created: 04/01/2023
+# last_modified: 04/01/2023
+
+# description
+# prints "This is my first script" to the terminal
+
+# usage
+# our_first_script
+
+# a pro looking script should have 5 pieces of info:
+# author, date_created, last_modified, description and usage.
+# Use the file command to see a file's type, eg. "$file our_first_script"
+echo "This is my first script"
+# The exit code 0 mean that the script runned successfully. codes 1 to 255 specifies
+# the error that happened;
+exit 0
