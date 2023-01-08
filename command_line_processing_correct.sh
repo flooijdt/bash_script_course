@@ -1,9 +1,9 @@
 #/bin/bash
 
-IPS="."
+IFS="."
 name=Simon.Smith
 out="output.txt"
 
-echo Simon.Smith > ~/$out
+echo $name > ~/$out
 
 exit 0
