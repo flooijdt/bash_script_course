@@ -4,6 +4,6 @@ IPS="."
 name=Simon.Smith
 out="output.txt"
 
-echo $name > ~/$out
+echo Simon.Smith > ~/$out
 
 exit 0
