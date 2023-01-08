@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is the exercises original command:
+# This is the exercises original script:
 IFS="."
 name="Simon.Smith"
 out="output.txt"
@@ -25,4 +25,8 @@ echo "Simon.Smith" > "~/output.txt"
 # this is how the command should be for
 # acting the way it should (splitting the
 # name and not splitting the path):
- 
+IFS="."
+name=Simon.Smith
+out="output.txt"
+
+echo $name > ~/$out
