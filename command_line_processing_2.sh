@@ -14,4 +14,25 @@ echo "$(ls *.txt)"
 # the second word is its one and only argument.
 
 # 3° Expansions:
-echo ls *.txt
+# In command substitution, whats inside the parentesis
+# is passed just as it is to a subshell! which will start
+# the processing the command line all again for that piece
+# of code.
+# in this case, the subshell will receive: ls *txt
+ls *.txt
+
+# So, again, 1° Tokenization:
+# there is one unquoted metacaracter: " ".
+
+# 2° Command identification:
+# ithere is one command ended by the \n at the end of line
+# there are two words, the first one being the command
+# and the second the argument.
+
+# 3° expansions:
+# there are no expansions,
+
+# 4° Globbing:
+# there is a * globbing. lets take that in the directory
+# are just 3 files a.txt, b.txt and c.txt:
+ls a.txt b.txt c.txt
