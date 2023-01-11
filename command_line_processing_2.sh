@@ -32,7 +32,17 @@ ls *.txt
 # 3° expansions:
 # there are no expansions,
 
-# 4° Globbing:
+# 3 - 4° Globbing:
 # there is a * globbing. lets take that in the directory
 # are just 3 files a.txt, b.txt and c.txt:
 ls a.txt b.txt c.txt
+
+# 4° quote removal:
+# no quotes.
+
+# 5° redirection:
+# no redirection.
+
+# 6° execute:
+# when executed it returns:
+a.txt b.txt c.txt
