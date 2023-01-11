@@ -47,4 +47,6 @@ ls a.txt b.txt c.txt
 # when executed it returns:
 a.txt b.txt c.txt
 
-#
+# Back to the original command, it becomes:
+echo "a.txt b.txt c.txt"
+
