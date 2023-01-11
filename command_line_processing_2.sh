@@ -50,3 +50,15 @@ a.txt b.txt c.txt
 # Back to the original command, it becomes:
 echo "a.txt b.txt c.txt"
 
+# continues... 3° Expansion:
+# no expansion nor globbing.
+
+# 4° Quote removal:
+# the quotes are removed because they were not the result
+# of an expansion and are unquoted:
+echo a.txt b.txt c.txt
+
+# 5° redirecion: none.
+# 6° execute:
+# it prints to stdout:
+a.txt b.txt c.txt
