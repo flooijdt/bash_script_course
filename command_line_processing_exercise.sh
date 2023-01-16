@@ -24,3 +24,7 @@ echo "The number 3" > number.txt
 echo The number 3 > number.txt
 
 # it writes the frase in the file.
+
+
+# 2°:
+ls /etc | grep net > net.txt
