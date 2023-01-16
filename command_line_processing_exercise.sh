@@ -39,3 +39,7 @@ name=john,jane,abhishek
 mkdir $folder && cd $folder && touch $name
 
 mkdir people && cd people && touch john jane abhishek
+
+
+# 4°:
+touch "Daily Report $(date +"%a %d %h %y")"
