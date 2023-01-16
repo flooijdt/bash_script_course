@@ -28,3 +28,12 @@ echo The number 3 > number.txt
 
 # 2°:
 ls /etc | grep net > net.txt
+
+# it is one simple command...
+
+# 3°:
+#/bin/bash
+IFS=,
+folder=people
+name=john,jane,abhishek
+mkdir $folder && cd $folder && touch $name
