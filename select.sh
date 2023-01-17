@@ -1,8 +1,9 @@
 #!/bin/bash
 
-select day mon tue wen thu fri;
+select day in mon tue wen thu fri;
 do
 echo "You chose: $day"
+break
 done
 
 exit 0
