@@ -23,7 +23,7 @@ case "$city" in
   Karachi) echo "dont care neither";;
   *) echo "error";;
 esac
-
+break
 done
 
 exit 0
