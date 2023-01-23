@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# correcting this script it is clear that i needed only one
+# echo statement: "$city is in $country", setting country in
+# each case option and at the end of the select echoing it.
 PS3="Select a city: "
 select city in Tokyo London "Los Angeles" Moscow Dubai Manchester "New York" Paris Bangalore Johannesburg Istanbul Milan "Abu Dhabi" Pune Nairobi Berlin Karachi
 do
