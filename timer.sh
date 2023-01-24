@@ -6,7 +6,9 @@ while getopts "m:s:" opt; do
     s) total_seconds="$OPTARG";;
     \?) echo "invalid option.";;
   esac
-  echo $total_seconds
-  sleep 1s
-  total_seconds=$"$total_seconds - 1"
+  while [ $total_seconds -ge 0 ]; do
+    echo $total_seconds
+    sleep 1s
+    total_seconds=$"$total_seconds - 1"
+    done
 done
