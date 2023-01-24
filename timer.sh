@@ -9,6 +9,6 @@ while getopts "m:s:" opt; do
   while [ $total_seconds -ge 0 ]; do
     echo $total_seconds
     sleep 1s
-    total_seconds=$"$total_seconds - 1"
+    total_seconds="$(($total_seconds-1))"
     done
 done
