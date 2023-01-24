@@ -2,8 +2,8 @@
 
 while getopts "m:s:" opt; do
   case "$opt" in
-    m) total_seconds="$(($OPTVAR * 60))";;
-    s) total_seconds="$OPTVAR";;
+    m) total_seconds="$(($OPTARG * 60))";;
+    s) total_seconds="$OPTARG";;
     \?) echo "invalid option.";;
   esac
   echo $total_seconds
