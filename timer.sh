@@ -12,3 +12,4 @@ while getopts "m:s:" opt; do
     total_seconds="$(($total_seconds-1))"
     done
 done
+echo "Time's up!"
