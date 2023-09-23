@@ -1,0 +1,14 @@
+#!/bin/bash
+# author: flooijdt
+# created: 2023/09/23
+# modified: 2023/09/23
+
+# description:
+# backups the home directory cotents in a .tar file
+
+# usage:
+# backup_script
+
+tar -cvf ~/Downloads/bash_script_course/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/Downloads/teste/* 2>/dev/null
+
+exit 0
