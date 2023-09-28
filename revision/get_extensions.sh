@@ -22,10 +22,11 @@
 
 # Note: You should ensure that the extension and pin numbers are exactly 4 digits long. Check out the -N option in the read command documentation, which you can access by running the command help read
 
-read -p "what is your first name?: "
-read -p "what is your surname/family name?: "
-read -s -N 4 -p "what is your extension number? it must be exactly 4 digits long: "
-read -s -N 4 -p "what access code would you like to use when dialing in? it must be exactly 4 digits long: "
+read -p "what is your first name?: " firstname
+read -p "what is your surname/family name?: " lastname
+read -s -N 4 -p "what is your extension number? it must be exactly 4 digits long: " extension
+echo
+read -s -N 4 -p "what access code would you like to use when dialing in? it must be exactly 4 digits long: " access
 
 # Step 2:
 
@@ -34,4 +35,4 @@ read -s -N 4 -p "what access code would you like to use when dialing in? it must
 # firstname,lastname,extension,access
 
 # Saving the data like this will make it possible to open the data in Microsoft Excel or some other spreadsheet software for processing (try it out!)
-
+echo $firstname,$lastname,$extension,$access >> extensions.csv
