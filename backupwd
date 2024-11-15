@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# author: flooijdt
+# date_created: 04/01/2023
+# last_modifyed: 06/01/2023
+#
+# description
+# makes a backup of all the files in the home folder
+# storing them in a tar file on the bash_script_course folder.
+#
+# usage
+# ex_o1
+#
+current_dir=$(pwd)
+
+echo "Hello ${USER^}"
+echo "I will now backup your actual directory, $current_dir"
+echo "You are running this script from $current_dir."
+echo "Therefore, I will save the backup in $current_dir."
+
+tar -cvf ${current_dir}/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $current_dir/* 2>/dev/null
+
+echo "Backup Completed Succesfully."
+exit 0
